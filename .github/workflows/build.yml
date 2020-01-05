@@ -7,8 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout-submodules@v1
-      - uses: textbook/git-checkout-submodule-action@master
-      - name: Build
-        run: |
+      - run: git submodule update --init
+      - run: |
           cmake .
           cmake --build .
