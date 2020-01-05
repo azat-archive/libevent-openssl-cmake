@@ -6,7 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout-submodules@v1
+      - uses: textbook/git-checkout-submodule-action@master
       - name: Build
         run: |
           cmake .
