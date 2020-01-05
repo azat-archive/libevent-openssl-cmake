@@ -11,4 +11,5 @@ jobs:
       - run: cmake .
       - run: cmake --build .
       - run: bin/regress http/https_..
+      - run: bin/regress ssl/..
       - run: bin/https-client -url https://kernel.org
