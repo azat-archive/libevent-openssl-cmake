@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: git submodule update --init
-      - run: |
-          cmake .
-          cmake --build .
+      - run: cmake .
+      - run: cmake --build .
+      - run: bin/regress http/https_..
+      - run: bin/https-client -url https://kernel.org
