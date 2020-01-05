@@ -1,6 +1,6 @@
 [submodule "libevent"]
 	path = libevent
-	url = https://github.com/libevent/libevent.git
+	url = https://github.com/azat/libevent.git
 [submodule "openssl-cmake"]
 	path = openssl-cmake
 	url = https://github.com/viaduck/openssl-cmake.git
