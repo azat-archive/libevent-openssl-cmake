@@ -10,6 +10,6 @@ jobs:
       - run: git submodule update --init
       - run: cmake .
       - run: cmake --build .
-      - run: bin/regress http/https_..
-      - run: bin/regress ssl/..
-      - run: bin/https-client -url https://kernel.org
+      - run: libevent/bin/regress http/https_..
+      - run: libevent/bin/regress ssl/..
+      - run: libevent/bin/https-client -url https://kernel.org
