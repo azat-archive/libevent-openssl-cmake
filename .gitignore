@@ -1,0 +1,8 @@
+.ninja_deps
+.ninja_log
+CMakeCache.txt
+CMakeFiles/
+arch.c
+build.ninja
+cmake_install.cmake
+rules.ninja
